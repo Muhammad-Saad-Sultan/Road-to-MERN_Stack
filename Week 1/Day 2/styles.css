@@ -1,0 +1,122 @@
+/* General Styling */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-bottom:30px;
+    border:3px solid #1b2838;
+}
+
+header h1{
+    color:#fff;
+    margin-bottom:15px;
+}
+
+/* Navigation */
+
+nav{
+    background:#34495e;
+    padding:12px;
+    border:2px solid #2c3e50;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#f1c40f;
+}
+
+/* Main */
+
+main{
+    width:90%;
+    margin:auto;
+}
+
+/* Card Component */
+
+.card{
+    width:400px;
+    background:white;
+    margin:25px auto;
+    padding:20px;
+    border:2px solid #ccc;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.card .img {
+    width: 357px;
+    height: 357px;
+    border-radius:10px;
+    margin-bottom:15px;
+    border:3px solid #3498db;
+    overflow: hidden;
+}
+
+.card .img img{
+    width:150%;
+    margin: -100px 0px 0px -75px;
+}
+
+.card h2{
+    color:#2c3e50;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:#3498db;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    padding:10px;
+}
+
+.card ul{
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    padding:15px;
+    list-style-type: decimal;
+}
+
+.card li{
+    margin-bottom:8px;
+    margin-left: 20px;
+}
+
+/* Footer */
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+    border-top:3px solid #1b2838;
+}
