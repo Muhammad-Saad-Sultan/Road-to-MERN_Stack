@@ -1,0 +1,198 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #1b2838;
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+
+nav {
+    background: #34495e;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* Main */
+
+main {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+
+.card,
+.project-card {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    margin: 25px auto;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Profile Image */
+
+.card .img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.card .img img {
+    width:130%;
+    margin: -100px 0px 0px -40px;
+}
+
+/* Typography */
+
+.card h2,
+.project-card h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #3498db;
+    margin: 20px 0 10px;
+}
+
+.card p,
+.project-card p {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    border: 1px solid #ddd;
+    padding: 15px 15px 15px 35px;
+    margin-bottom: 20px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+.card a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 4px solid #1b2838;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        gap: 1.2rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .card,
+    .project-card {
+        padding: 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+}
