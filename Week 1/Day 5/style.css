@@ -78,8 +78,8 @@ section {
     width: 100%;
     z-index: 1000;
     background: var(--bg-header);
-    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
