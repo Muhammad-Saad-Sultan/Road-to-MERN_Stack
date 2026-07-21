@@ -3,9 +3,9 @@
 :root {
     /* Color Palette */
     --bg-dark: #000000;
-    --bg-card: #151c2e;
+    --bg-card: #1b1e25;
     --bg-header: rgba(11, 15, 25, 0.85);
-    --bg-input: #1e293b;
+    --bg-input: rgba(101, 102, 138, 0.12);
     
     --accent-color: #808184;
     --accent-hover: #585b5f;
@@ -15,8 +15,8 @@
     --text-secondary: #dce0e6;
     --text-muted: #64748b;
     
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-highlight: rgba(92, 93, 98, 0.4);
+    --border-color: rgba(92, 93, 98, 0.393);
+    --border-highlight: rgba(255, 255, 255, 0.19);
     
     /* Layout Constants */
     --max-width: 1200px;
@@ -157,7 +157,7 @@ section {
 
 /* Main Content Layout */
 
-   .main-content {
+.main-content {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 40px 24px 80px 24px;
@@ -327,7 +327,7 @@ section {
 .skill-icon-box {
     width: 54px;
     height: 54px;
-    background: rgba(99, 102, 241, 0.12);
+    background: rgba(101, 102, 138, 0.12);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -388,7 +388,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--accent-color);
-    background: rgba(99, 102, 241, 0.12);
+    background: rgba(101, 102, 138, 0.12);
     padding: 4px 10px;
     border-radius: 20px;
     margin-bottom: 10px;
@@ -488,7 +488,7 @@ section {
 .hobby-icon-box {
     width: 48px;
     height: 48px;
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(101, 102, 138, 0.12);
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -551,8 +551,20 @@ section {
 }
 .passion-bar {
     height: 100%;
-    background: linear-gradient(90deg, var(--accent-color), #818cf8);
+    background: linear-gradient(90deg, var(--accent-color), #9d9ea0);
     border-radius: 3px;
+}
+.passion-bar#i {
+    width: 95%;
+}
+.passion-bar#ii {
+    width: 90%;
+}
+.passion-bar#iii {
+    width: 80%;
+}
+.passion-bar#iv {
+    width: 75%;
 }
 
 /* Contact Section */
