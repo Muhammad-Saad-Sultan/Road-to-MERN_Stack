@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid burlywood;
+    background-color: rgba(222, 184, 135, 0.5);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    --before-width: 0%;
+}
+
+.main::before {
+    content: '';
+    width: var(--before-width);
+    height: 1vh;
+    background-color: rgb(255, 164, 45);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.main.home {
+    gap: 10vh;
+}
+
+.main>p {
+    width: 100%;
+    margin: 7vh 0 0 0;
+    color: red;
+}
+
+.main>h2 {
+    margin: 0 0 7vh 0;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.main h1 {
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+
+div:not(.btn-wrapper) .green {
+    width: 40%;
+    color: white;
+    background-color: rgb(52, 163, 52);
+    font-size: larger;
+    font-weight: 900;
+    border: 0px;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.burlywood {
+    width: 20%;
+    color: white;
+    background-color: rgb(249, 175, 79);
+    font-size: medium;
+    font-weight: 900;
+    border: 0px;
+    border-radius: 7px;
+    padding: 1.5%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+div .green:hover {
+    background-color: rgb(31, 135, 31);
+    box-shadow: 1px 1px 20px 1px rgb(35, 171, 35);
+}
+
+ul {
+    list-style: none;
+    font-size: large;
+    width: 100%;
+}
+
+li {
+    padding: 2%;
+    border: 1px solid rgb(185, 171, 152);
+    margin: 2% 0%;
+    border-radius: 7px;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgba(204, 170, 126, 0.241);
+}
+
+.btn-wrapper{
+    width: 100%;
+    text-align: end;
+    margin-top: 3vh;
+}
+
+div.btn-wrapper .burlywood:hover {
+    background-color: rgb(255, 164, 45);
+    box-shadow: 1px 1px 20px 1px rgb(255, 175, 79);
+}
+
+div.btn-wrapper .green {
+    width: 20%;
+    color: white;
+    background-color: rgb(52, 163, 52);
+    font-size: medium;
+    font-weight: 900;
+    border: 0px;
+    border-radius: 7px;
+    padding: 1.5%;
+}
+
+div.btn-wrapper .restart {
+    width: 30% !important;
+}
+
+.result-content>P {
+    font-size: 1.1rem;
+    margin-bottom: 2vh;
+}
+
+div.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2vh;
+    column-gap: 5vh;
+}
+
+div.grid p {
+    font-size: 1.05rem;
+}
