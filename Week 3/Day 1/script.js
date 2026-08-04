@@ -17,17 +17,21 @@ for(let i = 0; i < 5; i++) {
 function callGreetings() {
     let name = 'Saad';
 
-    return function greetings() {
-        let greet = `Hello ${name}`;
-        return greet;
+    return {
+        greet() { 
+            return `Hello ${name}`;
+        },
+        setName(newName) {
+            name = newName;
+        }
     }
 }
 
-let greet = callGreetings();
+let person = callGreetings();
 
-console.log(greet);
-name = 'hamza';
-console.log(greet());
+console.log(person.greet());
+person.setName('hamza');
+console.log(person.greet());
 
 // Rate-Limiter....................
 function rateLimiter(val) {
@@ -63,8 +67,8 @@ function mapping(element, i, arr) {
 let arr = [1,2,3,4,5];
 let arr2 = mapArray(arr, mapping);
 
-console.log(arr);
-console.log(arr2);
+console.log(`Array 1: [${arr}]`);
+console.log(`Mapped array from Array 1: [${arr2}]`);
 
 // Filter-Array (.filter())....................
 function filterArray(arr) {
@@ -73,13 +77,11 @@ function filterArray(arr) {
     for(let i = 0; i < arr.length; i++) {
         result.push(filter(arr[i], i, arr));
     }
-    console.log(result);
     for(let i = 0; i < result.length; i++) {
         if(result[i] === undefined) {
             temp.push(i);
         }
     }
-    console.log(temp);
     for(let i = 0; i < temp.length; i++) {
         if(i === 0) {
             result.splice(temp[i], 1);
@@ -98,4 +100,4 @@ function filter(element, i, arr) {
 }
 
 let arr3 = filterArray(arr);
-console.log(arr3);
+console.log(`Filtered array from Array 1: [${arr3}]`);
