@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fetch API Practice</title>
+</head>
+
+<body>
+    <h1>Fetch API Practice</h1>
+
+    <!-- JSONPlaceholder -->
+    <section>
+        <h2>1. Users</h2>
+        <p id="usersLoading"></p>
+        <p id="usersError" class="error"></p>
+        <ul id="usersList"></ul>
+    </section>
+
+    <!-- PokeAPI -->
+    <section>
+        <h2>2. Search Pokemon</h2>
+        <input type="text" id="pokemonInput" placeholder="Enter Pokemon name">
+        <button id="searchButton">Search</button>
+        <p id="pokemonLoading"></p>
+        <p id="pokemonError" class="error"></p>
+        <div id="pokemonResult" class="pokemon-info"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
