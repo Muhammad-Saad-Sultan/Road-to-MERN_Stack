@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Github Profile Viewer</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a class="logo" href="./">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Profile Viewer</span>
+            </a>
+        </div>
+        <div class="right">
+            <form action="#">
+                <label for="search">
+                    <input type="text" name="search" id="search" title="searchbar" placeholder="Search github username.....">
+                </label>
+                <button type="button" id="searchButton" title="searchButton">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="loading-icon visibility">
+            <div class="icon">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-2xl"></i>
+                <span>Loading profile...</span>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="empty-state">
+                <i class="fa-brands fa-github"></i>
+                <h1>Explore a GitHub profile</h1>
+                <p>Enter a GitHub username above to view their profile and latest repositories.</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
