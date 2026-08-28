@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+    /* Color Palette */
+    --bg-dark: #000000;
+    --bg-card: #151c2e;
+    --bg-header: rgba(11, 15, 25, 0.85);
+    --bg-input: #1e293b;
+    
+    --accent-color: #808184;
+    --accent-hover: #585b5f;
+    --accent-glow: rgba(119, 119, 130, 0.35);
+    
+    --text-primary: #ffffff;
+    --text-secondary: #dce0e6;
+    --text-muted: #64748b;
+    
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-highlight: rgba(92, 93, 98, 0.4);
+    
+    /* Layout Constants */
+    --max-width: 1200px;
+    --header-height: 80px;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
