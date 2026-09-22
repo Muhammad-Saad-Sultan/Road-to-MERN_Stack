@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+    --color-primary: goldenrod;
+    --color-primary-hover: rgb(255, 183, 0);
+    --color-primary-light: rgb(250, 218, 137);
+    --color-primary-transparent: rgba(218, 165, 32, 0.8);
+    --color-primary-bg: rgba(218, 165, 32, 0.1);
+    --color-primary-shadow: rgba(218, 165, 32, 0.25);
+    --color-primary-shadow-hover: rgba(218, 165, 32, 0.35);
+}
+
+@theme {
+	--animate-slide: errorSlide 0.5s ease;
+
+	@keyframes errorSlide {
+		from {
+			opacity: 0;
+			transform: translateY(-8px);
+		}
+	
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}
